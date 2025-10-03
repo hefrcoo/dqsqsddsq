@@ -3,7 +3,7 @@ var options = {
             mode: "no-cors",
       credentials: "include"
         }
-var url = `/messages`;
+var url = `/support`;
 response = fetch(url, options).then(r => {
     if (!r.ok) throw new Error("HTTP " + r.status);
     return r.text();
